@@ -1,10 +1,13 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
 
 // Variables
 @import 'variables';
 @import '_head-nav';
+@import '_home_style.scss';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -12,7 +15,4 @@
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-.navbar{
-  background: black;
 }

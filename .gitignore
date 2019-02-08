@@ -1,8 +1,17 @@
 /node_modules
 /public/hot
 /public/storage
+/public/app.css
+/public/css/app.css
+/public/js/app.js
+/public/mix-manifest.json
+
 /storage/*.key
 /vendor
+/.idea
+/.vscode
+/nbproject
+/.vagrant
 .env
 .phpunit.result.cache
 Homestead.json

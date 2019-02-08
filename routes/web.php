@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/applicant/login', 'ApplicantLoginController@showLogin')->name('applicant.login');
+Route::post('/applicant/login', 'ApplicantLoginController@doLogin')->name('applicant.doLogin');
+Route::get('applicant/register', function () {
+    return view('applicant.register');
+})->name('applicant.register');
+Route::get('/employer/register', function () {
+    return view('employer.register');
+})->name('employer.register');
+Route::get('/employer/login', function () {
+    return view('employer.login');
+})->name('employer.login');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
